@@ -1,0 +1,89 @@
+.background1{
+    background-color: #B9C9C7;
+}
+.background2{
+    background-color: rgb(167, 175, 183);
+}
+.color0{
+    color:white;
+}
+.color1{
+    color: #B9C9C7;
+}
+.color2{
+    color: rgb(167, 175, 183);
+}
+.color3{
+    color:black;
+    text-decoration: none;
+}
+.fondo{
+    background: url("../img/setasfiltroazul.jpg") no-repeat fixed center;
+    color: #B9C9C7;
+    padding: 3%;
+    background-size:cover;
+    }
+.subrayado{
+    margin-right: 2em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px #B9C9C7 solid;
+}
+section>.subrayado{
+    border-bottom: 1px black solid;
+}
+aside{
+    padding-bottom:10%;
+}
+.bdotted{
+    border-left: #B9C9C7 4px dotted;
+}
+.fotoperfil{
+    width: 76%;
+}
+.display-flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+a.color1:hover{
+    color:azure;
+}
+/*-- MEDIA QUERYS --*/
+
+/*--  Small devices (landscape phones, 576px and down) --*/
+@media (max-width: 576px) { 
+    .fotoperfil{
+        display: none;
+    }
+    .col-1{
+        width: 100%;
+    }
+    .pie{
+        flex-direction: column;
+    }
+    .pie>div{
+        text-align: center;
+        width: 100%;
+    }
+}
+/*--  Small devices (landscape phones, 768px and down) --*/
+@media (max-width: 768px) { 
+    .fotoperfil{
+        display: none;
+    }
+}
+/*--  Small devices (landscape phones, 992px and up) --*/
+@media (min-width: 992px) { 
+    .datos{
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    section{
+        padding-left: 6%;
+    }
+    aside{
+        padding-right: 6%;
+    }
+}
+    
