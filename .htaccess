@@ -1,7 +1,4 @@
-RewriteEngine On 
-	RewriteCond %{ENV:HTTPS} !on [NC] 
-	RewriteCond %{HTTP_HOST} ^isabelpastorlopez.com$ [OR] 
-	RewriteCond %{HTTP_HOST} ^www.isabelpastorlopez.com$ [OR]
-	RewriteCond %{HTTP_HOST} ^isabelpastorlopez.es$ [OR] 
-	RewriteCond %{HTTP_HOST} ^www.isabelpastorlopez.es$
-	RewriteRule ^(.*)$ https://isabelpastorlopez.com/$1 [R=301,L,NE]
+RewriteEngine On
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^isabelpastorlopez\.es$ [NC]
+RewriteRule ^(.*)$ https://isabelpastorlopez.es/$1 [R=301,L,NE]
